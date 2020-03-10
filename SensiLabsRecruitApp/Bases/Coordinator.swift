@@ -19,4 +19,9 @@ extension Coordinator {
     func goBack(animated: Bool = true) {
         navigationController.popViewController(animated: animated)
     }
+    
+    func setAsTopVC() {
+        navigationController.viewControllers.remove(at: 0)
+    }
+    
 }

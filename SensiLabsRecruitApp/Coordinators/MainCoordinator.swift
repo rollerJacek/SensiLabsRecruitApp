@@ -19,18 +19,18 @@ class MainCoordinator: Coordinator {
     func start() {
         let vc = SplashViewController()
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func goToMainVC() {
-        let vc = SplashViewController()
+        let vc = MainViewController()
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func goToDetails() {
         let vc = SplashViewController()
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: true)
     }
 }

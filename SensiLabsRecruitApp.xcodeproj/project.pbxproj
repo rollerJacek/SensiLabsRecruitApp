@@ -18,6 +18,8 @@
 		6BDE9EE224182ADF00F7A0D1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE9EE124182ADF00F7A0D1 /* Coordinator.swift */; };
 		6BDE9EE424182B9000F7A0D1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE9EE324182B9000F7A0D1 /* MainCoordinator.swift */; };
 		6BDE9EE724182DDE00F7A0D1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE9EE624182DDE00F7A0D1 /* BaseViewController.swift */; };
+		6BDE9EE92418304200F7A0D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE9EE82418304200F7A0D1 /* MainViewController.swift */; };
+		6BDE9EEB24183A2700F7A0D1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE9EEA24183A2700F7A0D1 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		6BDE9EE124182ADF00F7A0D1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		6BDE9EE324182B9000F7A0D1 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		6BDE9EE624182DDE00F7A0D1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6BDE9EE82418304200F7A0D1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6BDE9EEA24183A2700F7A0D1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D1626CC57BFE316CB4142EAE /* Pods-SensiLabsRecruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SensiLabsRecruitApp.release.xcconfig"; path = "Target Support Files/Pods-SensiLabsRecruitApp/Pods-SensiLabsRecruitApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +184,7 @@
 		6B3630662418255700DB00C6 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6BDE9EE82418304200F7A0D1 /* MainViewController.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 		6B3630672418256700DB00C6 /* DetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6BDE9EEA24183A2700F7A0D1 /* DetailsViewController.swift */,
 			);
 			path = DetailsViewController;
 			sourceTree = "<group>";
@@ -386,8 +392,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BDE9EE92418304200F7A0D1 /* MainViewController.swift in Sources */,
 				6BDE9EE224182ADF00F7A0D1 /* Coordinator.swift in Sources */,
 				6B363032241820CF00DB00C6 /* AppDelegate.swift in Sources */,
+				6BDE9EEB24183A2700F7A0D1 /* DetailsViewController.swift in Sources */,
 				6B363034241820CF00DB00C6 /* SceneDelegate.swift in Sources */,
 				6BDE9EE424182B9000F7A0D1 /* MainCoordinator.swift in Sources */,
 				6B363064241823FB00DB00C6 /* SplashViewController.swift in Sources */,
