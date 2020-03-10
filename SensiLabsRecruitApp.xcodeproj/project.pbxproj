@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A255407AC7317D029164372 /* libPods-SensiLabsRecruitApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AD84D773D7476CFE58E531 /* libPods-SensiLabsRecruitApp.a */; };
+		6B363032241820CF00DB00C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B363031241820CF00DB00C6 /* AppDelegate.swift */; };
+		6B363034241820CF00DB00C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B363033241820CF00DB00C6 /* SceneDelegate.swift */; };
+		6B36303B241820D000DB00C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B36303A241820D000DB00C6 /* Assets.xcassets */; };
+		6B36303E241820D000DB00C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B36303C241820D000DB00C6 /* LaunchScreen.storyboard */; };
+		6B363049241820D000DB00C6 /* SensiLabsRecruitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B363048241820D000DB00C6 /* SensiLabsRecruitAppTests.swift */; };
+		6B363054241820D000DB00C6 /* SensiLabsRecruitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B363053241820D000DB00C6 /* SensiLabsRecruitAppUITests.swift */; };
+		6B363064241823FB00DB00C6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B363063241823FB00DB00C6 /* SplashViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B363045241820D000DB00C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B363026241820CF00DB00C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B36302D241820CF00DB00C6;
+			remoteInfo = SensiLabsRecruitApp;
+		};
+		6B363050241820D000DB00C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B363026241820CF00DB00C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B36302D241820CF00DB00C6;
+			remoteInfo = SensiLabsRecruitApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11AD84D773D7476CFE58E531 /* libPods-SensiLabsRecruitApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SensiLabsRecruitApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		672F164F501B9C4AADDE8AD4 /* Pods-SensiLabsRecruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SensiLabsRecruitApp.debug.xcconfig"; path = "Target Support Files/Pods-SensiLabsRecruitApp/Pods-SensiLabsRecruitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6B36302E241820CF00DB00C6 /* SensiLabsRecruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensiLabsRecruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B363031241820CF00DB00C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B363033241820CF00DB00C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6B36303A241820D000DB00C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B36303D241820D000DB00C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B36303F241820D000DB00C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B363044241820D000DB00C6 /* SensiLabsRecruitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensiLabsRecruitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B363048241820D000DB00C6 /* SensiLabsRecruitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiLabsRecruitAppTests.swift; sourceTree = "<group>"; };
+		6B36304A241820D000DB00C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B36304F241820D000DB00C6 /* SensiLabsRecruitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensiLabsRecruitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B363053241820D000DB00C6 /* SensiLabsRecruitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiLabsRecruitAppUITests.swift; sourceTree = "<group>"; };
+		6B363055241820D000DB00C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B363063241823FB00DB00C6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D1626CC57BFE316CB4142EAE /* Pods-SensiLabsRecruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SensiLabsRecruitApp.release.xcconfig"; path = "Target Support Files/Pods-SensiLabsRecruitApp/Pods-SensiLabsRecruitApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B36302B241820CF00DB00C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A255407AC7317D029164372 /* libPods-SensiLabsRecruitApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B363041241820D000DB00C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B36304C241820D000DB00C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34D6B0683682FABC69213BC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				672F164F501B9C4AADDE8AD4 /* Pods-SensiLabsRecruitApp.debug.xcconfig */,
+				D1626CC57BFE316CB4142EAE /* Pods-SensiLabsRecruitApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B363025241820CF00DB00C6 = {
+			isa = PBXGroup;
+			children = (
+				6B363030241820CF00DB00C6 /* SensiLabsRecruitApp */,
+				6B363047241820D000DB00C6 /* SensiLabsRecruitAppTests */,
+				6B363052241820D000DB00C6 /* SensiLabsRecruitAppUITests */,
+				6B36302F241820CF00DB00C6 /* Products */,
+				34D6B0683682FABC69213BC3 /* Pods */,
+				79D459093714AB0672A03AF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B36302F241820CF00DB00C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B36302E241820CF00DB00C6 /* SensiLabsRecruitApp.app */,
+				6B363044241820D000DB00C6 /* SensiLabsRecruitAppTests.xctest */,
+				6B36304F241820D000DB00C6 /* SensiLabsRecruitAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B363030241820CF00DB00C6 /* SensiLabsRecruitApp */ = {
+			isa = PBXGroup;
+			children = (
+				6B3630652418244900DB00C6 /* AdditionalFiles */,
+				6B363061241823C800DB00C6 /* AppSections */,
+				6BDE9EDF241827E900F7A0D1 /* ConnectionManager */,
+				6BDE9EDE241827DC00F7A0D1 /* Models */,
+			);
+			path = SensiLabsRecruitApp;
+			sourceTree = "<group>";
+		};
+		6B363047241820D000DB00C6 /* SensiLabsRecruitAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B363048241820D000DB00C6 /* SensiLabsRecruitAppTests.swift */,
+				6B36304A241820D000DB00C6 /* Info.plist */,
+			);
+			path = SensiLabsRecruitAppTests;
+			sourceTree = "<group>";
+		};
+		6B363052241820D000DB00C6 /* SensiLabsRecruitAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B363053241820D000DB00C6 /* SensiLabsRecruitAppUITests.swift */,
+				6B363055241820D000DB00C6 /* Info.plist */,
+			);
+			path = SensiLabsRecruitAppUITests;
+			sourceTree = "<group>";
+		};
+		6B363061241823C800DB00C6 /* AppSections */ = {
+			isa = PBXGroup;
+			children = (
+				6B3630672418256700DB00C6 /* DetailsViewController */,
+				6B3630662418255700DB00C6 /* MainViewController */,
+				6B363062241823E300DB00C6 /* SplashViewController */,
+			);
+			path = AppSections;
+			sourceTree = "<group>";
+		};
+		6B363062241823E300DB00C6 /* SplashViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B363063241823FB00DB00C6 /* SplashViewController.swift */,
+			);
+			path = SplashViewController;
+			sourceTree = "<group>";
+		};
+		6B3630652418244900DB00C6 /* AdditionalFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6B363031241820CF00DB00C6 /* AppDelegate.swift */,
+				6B363033241820CF00DB00C6 /* SceneDelegate.swift */,
+				6B36303A241820D000DB00C6 /* Assets.xcassets */,
+				6B36303C241820D000DB00C6 /* LaunchScreen.storyboard */,
+				6B36303F241820D000DB00C6 /* Info.plist */,
+			);
+			path = AdditionalFiles;
+			sourceTree = "<group>";
+		};
+		6B3630662418255700DB00C6 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		6B3630672418256700DB00C6 /* DetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailsViewController;
+			sourceTree = "<group>";
+		};
+		6BDE9EDE241827DC00F7A0D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BDE9EDF241827E900F7A0D1 /* ConnectionManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ConnectionManager;
+			sourceTree = "<group>";
+		};
+		79D459093714AB0672A03AF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11AD84D773D7476CFE58E531 /* libPods-SensiLabsRecruitApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B36302D241820CF00DB00C6 /* SensiLabsRecruitApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B363058241820D000DB00C6 /* Build configuration list for PBXNativeTarget "SensiLabsRecruitApp" */;
+			buildPhases = (
+				518CC630B9C71F4F41B31BAA /* [CP] Check Pods Manifest.lock */,
+				6B36302A241820CF00DB00C6 /* Sources */,
+				6B36302B241820CF00DB00C6 /* Frameworks */,
+				6B36302C241820CF00DB00C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SensiLabsRecruitApp;
+			productName = SensiLabsRecruitApp;
+			productReference = 6B36302E241820CF00DB00C6 /* SensiLabsRecruitApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B363043241820D000DB00C6 /* SensiLabsRecruitAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B36305B241820D000DB00C6 /* Build configuration list for PBXNativeTarget "SensiLabsRecruitAppTests" */;
+			buildPhases = (
+				6B363040241820D000DB00C6 /* Sources */,
+				6B363041241820D000DB00C6 /* Frameworks */,
+				6B363042241820D000DB00C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B363046241820D000DB00C6 /* PBXTargetDependency */,
+			);
+			name = SensiLabsRecruitAppTests;
+			productName = SensiLabsRecruitAppTests;
+			productReference = 6B363044241820D000DB00C6 /* SensiLabsRecruitAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B36304E241820D000DB00C6 /* SensiLabsRecruitAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B36305E241820D000DB00C6 /* Build configuration list for PBXNativeTarget "SensiLabsRecruitAppUITests" */;
+			buildPhases = (
+				6B36304B241820D000DB00C6 /* Sources */,
+				6B36304C241820D000DB00C6 /* Frameworks */,
+				6B36304D241820D000DB00C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B363051241820D000DB00C6 /* PBXTargetDependency */,
+			);
+			name = SensiLabsRecruitAppUITests;
+			productName = SensiLabsRecruitAppUITests;
+			productReference = 6B36304F241820D000DB00C6 /* SensiLabsRecruitAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B363026241820CF00DB00C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Jacek Stąporek";
+				TargetAttributes = {
+					6B36302D241820CF00DB00C6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					6B363043241820D000DB00C6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 6B36302D241820CF00DB00C6;
+					};
+					6B36304E241820D000DB00C6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 6B36302D241820CF00DB00C6;
+					};
+				};
+			};
+			buildConfigurationList = 6B363029241820CF00DB00C6 /* Build configuration list for PBXProject "SensiLabsRecruitApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B363025241820CF00DB00C6;
+			productRefGroup = 6B36302F241820CF00DB00C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B36302D241820CF00DB00C6 /* SensiLabsRecruitApp */,
+				6B363043241820D000DB00C6 /* SensiLabsRecruitAppTests */,
+				6B36304E241820D000DB00C6 /* SensiLabsRecruitAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B36302C241820CF00DB00C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B36303E241820D000DB00C6 /* LaunchScreen.storyboard in Resources */,
+				6B36303B241820D000DB00C6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B363042241820D000DB00C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B36304D241820D000DB00C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		518CC630B9C71F4F41B31BAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SensiLabsRecruitApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B36302A241820CF00DB00C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B363032241820CF00DB00C6 /* AppDelegate.swift in Sources */,
+				6B363034241820CF00DB00C6 /* SceneDelegate.swift in Sources */,
+				6B363064241823FB00DB00C6 /* SplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B363040241820D000DB00C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B363049241820D000DB00C6 /* SensiLabsRecruitAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B36304B241820D000DB00C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B363054241820D000DB00C6 /* SensiLabsRecruitAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B363046241820D000DB00C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B36302D241820CF00DB00C6 /* SensiLabsRecruitApp */;
+			targetProxy = 6B363045241820D000DB00C6 /* PBXContainerItemProxy */;
+		};
+		6B363051241820D000DB00C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B36302D241820CF00DB00C6 /* SensiLabsRecruitApp */;
+			targetProxy = 6B363050241820D000DB00C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B36303C241820D000DB00C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B36303D241820D000DB00C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B363056241820D000DB00C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B363057241820D000DB00C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B363059241820D000DB00C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 672F164F501B9C4AADDE8AD4 /* Pods-SensiLabsRecruitApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AHZBHDP75Z;
+				INFOPLIST_FILE = "$(SRCROOT)/SensiLabsRecruitApp/AdditionalFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jacek.SensiLabsRecruitApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B36305A241820D000DB00C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1626CC57BFE316CB4142EAE /* Pods-SensiLabsRecruitApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AHZBHDP75Z;
+				INFOPLIST_FILE = "$(SRCROOT)/SensiLabsRecruitApp/AdditionalFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jacek.SensiLabsRecruitApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B36305C241820D000DB00C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AHZBHDP75Z;
+				INFOPLIST_FILE = SensiLabsRecruitAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jacek.SensiLabsRecruitAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SensiLabsRecruitApp.app/SensiLabsRecruitApp";
+			};
+			name = Debug;
+		};
+		6B36305D241820D000DB00C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AHZBHDP75Z;
+				INFOPLIST_FILE = SensiLabsRecruitAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jacek.SensiLabsRecruitAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SensiLabsRecruitApp.app/SensiLabsRecruitApp";
+			};
+			name = Release;
+		};
+		6B36305F241820D000DB00C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AHZBHDP75Z;
+				INFOPLIST_FILE = SensiLabsRecruitAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jacek.SensiLabsRecruitAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SensiLabsRecruitApp;
+			};
+			name = Debug;
+		};
+		6B363060241820D000DB00C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AHZBHDP75Z;
+				INFOPLIST_FILE = SensiLabsRecruitAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jacek.SensiLabsRecruitAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SensiLabsRecruitApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B363029241820CF00DB00C6 /* Build configuration list for PBXProject "SensiLabsRecruitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B363056241820D000DB00C6 /* Debug */,
+				6B363057241820D000DB00C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B363058241820D000DB00C6 /* Build configuration list for PBXNativeTarget "SensiLabsRecruitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B363059241820D000DB00C6 /* Debug */,
+				6B36305A241820D000DB00C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B36305B241820D000DB00C6 /* Build configuration list for PBXNativeTarget "SensiLabsRecruitAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B36305C241820D000DB00C6 /* Debug */,
+				6B36305D241820D000DB00C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B36305E241820D000DB00C6 /* Build configuration list for PBXNativeTarget "SensiLabsRecruitAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B36305F241820D000DB00C6 /* Debug */,
+				6B363060241820D000DB00C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B363026241820CF00DB00C6 /* Project object */;
+}

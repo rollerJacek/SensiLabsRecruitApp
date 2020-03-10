@@ -1,0 +1,6 @@
+module Pods_SensiLabsRecruitApp {
+  umbrella header "Pods-SensiLabsRecruitApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
