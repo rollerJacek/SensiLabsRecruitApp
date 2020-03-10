@@ -8,11 +8,12 @@
 
 import UIKit
 
-class SplashViewController: UIViewController {
+class SplashViewController: BaseViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func setupUI() {
+        super.setupUI()
         view.backgroundColor = .lightGray
+        self.title = "splash"
     }
 
 }

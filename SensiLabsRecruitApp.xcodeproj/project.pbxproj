@@ -15,6 +15,9 @@
 		6B363049241820D000DB00C6 /* SensiLabsRecruitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B363048241820D000DB00C6 /* SensiLabsRecruitAppTests.swift */; };
 		6B363054241820D000DB00C6 /* SensiLabsRecruitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B363053241820D000DB00C6 /* SensiLabsRecruitAppUITests.swift */; };
 		6B363064241823FB00DB00C6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B363063241823FB00DB00C6 /* SplashViewController.swift */; };
+		6BDE9EE224182ADF00F7A0D1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE9EE124182ADF00F7A0D1 /* Coordinator.swift */; };
+		6BDE9EE424182B9000F7A0D1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE9EE324182B9000F7A0D1 /* MainCoordinator.swift */; };
+		6BDE9EE724182DDE00F7A0D1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE9EE624182DDE00F7A0D1 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		6B363053241820D000DB00C6 /* SensiLabsRecruitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiLabsRecruitAppUITests.swift; sourceTree = "<group>"; };
 		6B363055241820D000DB00C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B363063241823FB00DB00C6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		6BDE9EE124182ADF00F7A0D1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6BDE9EE324182B9000F7A0D1 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		6BDE9EE624182DDE00F7A0D1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D1626CC57BFE316CB4142EAE /* Pods-SensiLabsRecruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SensiLabsRecruitApp.release.xcconfig"; path = "Target Support Files/Pods-SensiLabsRecruitApp/Pods-SensiLabsRecruitApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +121,9 @@
 			children = (
 				6B3630652418244900DB00C6 /* AdditionalFiles */,
 				6B363061241823C800DB00C6 /* AppSections */,
+				6BDE9EE524182DC500F7A0D1 /* Bases */,
 				6BDE9EDF241827E900F7A0D1 /* ConnectionManager */,
+				6BDE9EE024182A7D00F7A0D1 /* Coordinators */,
 				6BDE9EDE241827DC00F7A0D1 /* Models */,
 			);
 			path = SensiLabsRecruitApp;
@@ -195,6 +203,23 @@
 			children = (
 			);
 			path = ConnectionManager;
+			sourceTree = "<group>";
+		};
+		6BDE9EE024182A7D00F7A0D1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6BDE9EE324182B9000F7A0D1 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6BDE9EE524182DC500F7A0D1 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				6BDE9EE124182ADF00F7A0D1 /* Coordinator.swift */,
+				6BDE9EE624182DDE00F7A0D1 /* BaseViewController.swift */,
+			);
+			path = Bases;
 			sourceTree = "<group>";
 		};
 		79D459093714AB0672A03AF5 /* Frameworks */ = {
@@ -361,9 +386,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BDE9EE224182ADF00F7A0D1 /* Coordinator.swift in Sources */,
 				6B363032241820CF00DB00C6 /* AppDelegate.swift in Sources */,
 				6B363034241820CF00DB00C6 /* SceneDelegate.swift in Sources */,
+				6BDE9EE424182B9000F7A0D1 /* MainCoordinator.swift in Sources */,
 				6B363064241823FB00DB00C6 /* SplashViewController.swift in Sources */,
+				6BDE9EE724182DDE00F7A0D1 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
