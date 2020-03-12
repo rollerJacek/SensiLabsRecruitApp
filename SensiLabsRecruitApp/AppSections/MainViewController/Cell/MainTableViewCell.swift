@@ -21,6 +21,7 @@ class MainTableViewCell: UITableViewCell {
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.textColor = .darkGray
+        label.font = .systemFont(ofSize: 12)
         return label
     }()
     
@@ -48,11 +49,11 @@ class MainTableViewCell: UITableViewCell {
         
         titleLabel.top(to: container, offset: 20)
         titleLabel.left(to: container, offset: 20)
-        titleLabel.bottom(to: container, container.centerYAnchor, offset: 3)
+        titleLabel.bottom(to: container, container.centerYAnchor, offset: 5)
         
-        descriptionLabel.top(to: container, container.centerYAnchor, offset: 3)
-        descriptionLabel.left(to: container, offset: 20)
-        descriptionLabel.bottom(to: container)
+        descriptionLabel.top(to: container, container.centerYAnchor, offset: 5)
+        descriptionLabel.left(to: titleLabel, offset: 5)
+        descriptionLabel.bottom(to: container, offset: -20)
         
         arrow.top(to: container)
         arrow.right(to: container)
@@ -64,9 +65,9 @@ class MainTableViewCell: UITableViewCell {
     
     func addSubviews() {
         addSubview(container)
-        addSubview(titleLabel)
-        addSubview(descriptionLabel)
-        addSubview(arrow)
+        container.addSubview(titleLabel)
+        container.addSubview(descriptionLabel)
+        container.addSubview(arrow)
     }
     
     func addShadow() {

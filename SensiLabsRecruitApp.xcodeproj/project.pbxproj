@@ -58,6 +58,7 @@
 		6B07E1AA2418E5150027E98F /* Connection+Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Connection+Requests.swift"; sourceTree = "<group>"; };
 		6B07E1AF2418F4BC0027E98F /* FilmsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsResponse.swift; sourceTree = "<group>"; };
 		6B1FBF23241A1B8700F7B165 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		6B1FBF25241A485600F7B165 /* libTinyConstraints.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTinyConstraints.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B36302E241820CF00DB00C6 /* SensiLabsRecruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensiLabsRecruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B363031241820CF00DB00C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B363033241820CF00DB00C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -271,6 +272,7 @@
 		79D459093714AB0672A03AF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B1FBF25241A485600F7B165 /* libTinyConstraints.a */,
 				11AD84D773D7476CFE58E531 /* libPods-SensiLabsRecruitApp.a */,
 			);
 			name = Frameworks;
