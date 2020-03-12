@@ -14,7 +14,7 @@ protocol MainViewModelDelegate: class {
 
 class MainViewModel {
     
-    var films: [FilmsModel] = []
+    private var films: [FilmsModel] = []
     weak var delegate: MainViewModelDelegate?
     
     func getFilms() {
@@ -22,5 +22,17 @@ class MainViewModel {
             self?.films = result
             self?.delegate?.didFetchFilms()
         }
+    }
+    
+    func itemForFilm(index: Int) -> FilmsModel {
+        films[index]
+    }
+    
+    func countOfFilms() -> Int {
+        films.count
+    }
+    
+    func charactersForFilm(index: Int) -> [String] {
+        films[index].characters
     }
 }

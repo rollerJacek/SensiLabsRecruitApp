@@ -49,19 +49,18 @@ class MainViewController: BaseViewController {
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.films.count
+        return viewModel.countOfFilms()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableCellIdentifiers.main, for: indexPath) as? MainTableViewCell else { return UITableViewCell() }
-        let item = viewModel.films[indexPath.row]
+        let item = viewModel.itemForFilm(index: indexPath.row)
         cell.setupCell(film: item)
-        cell.contentView.layer.masksToBounds = true
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let items = viewModel.films[indexPath.row].characters
+        let items = viewModel.charactersForFilm(index: indexPath.row)
         coordinator?.goToDetails(characterList: items)
     }
 }
