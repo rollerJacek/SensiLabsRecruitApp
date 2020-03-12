@@ -66,9 +66,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension MainViewController: MainViewModelDelegate {
     func didFetchFilms() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-            self.dataLoadingView?.dismiss(animated: true)
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+            self?.dataLoadingView?.dismiss(animated: true)
         }
     }
 }

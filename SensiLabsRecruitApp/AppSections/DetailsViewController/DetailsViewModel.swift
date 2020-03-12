@@ -18,9 +18,9 @@ class DetailsViewModel {
     weak var delegate: DetailsViewModelDelegate?
     
     func getCharacters(characters: [String]) {
-        ConnectionService.getAllCharacters(characterList: characters) { result in
-            self.characters = result
-            self.delegate?.didFetchCharacters()
+        ConnectionService.getAllCharacters(characterList: characters) { [weak self] result in
+            self?.characters = result
+            self?.delegate?.didFetchCharacters()
         }
     }
 }

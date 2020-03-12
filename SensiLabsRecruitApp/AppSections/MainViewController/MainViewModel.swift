@@ -18,9 +18,9 @@ class MainViewModel {
     weak var delegate: MainViewModelDelegate?
     
     func getFilms() {
-        ConnectionService.getAllFilms() { result in
-            self.films = result
-            self.delegate?.didFetchFilms()
+        ConnectionService.getAllFilms() { [weak self] result in
+            self?.films = result
+            self?.delegate?.didFetchFilms()
         }
     }
 }

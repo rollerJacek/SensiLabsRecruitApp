@@ -61,9 +61,9 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension DetailsViewController: DetailsViewModelDelegate {
     func didFetchCharacters() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-            self.dataLoadingView?.dismiss(animated: true)
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+            self?.dataLoadingView?.dismiss(animated: true)
         }
     }
 }
