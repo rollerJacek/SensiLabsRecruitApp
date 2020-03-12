@@ -14,13 +14,3 @@ protocol Coordinator {
 
     func start()
 }
-
-extension Coordinator {
-    func goBack(animated: Bool = true) {
-        navigationController.popViewController(animated: animated)
-    }
-    
-    func removeFirstVC() {
-        navigationController.viewControllers.remove(at: 0)
-    }
-}

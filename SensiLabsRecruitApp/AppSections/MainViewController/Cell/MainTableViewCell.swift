@@ -40,8 +40,14 @@ class MainTableViewCell: UITableViewCell {
         constraintView()
         addShadow()
     }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupCell(film: FilmsModel) {
+        titleLabel.text = film.title
+        descriptionLabel.text = film.director
     }
     
     func constraintView() {

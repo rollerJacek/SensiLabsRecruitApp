@@ -11,11 +11,10 @@ import TinyConstraints
 
 class DetailsViewController: BaseViewController {
     
-    private let viewModel = DetailsViewModel()
+    private lazy var viewModel = DetailsViewModel(characters: characters)
+    private var dataLoadingView: DataLoaderViewController?
     lazy var tableView = UITableView()
-    let cellId = "DetailsTableViewCell"
     lazy var characters: [String] = []
-    var dataLoadingView: DataLoaderViewController?
     
     override func setupUI() {
         super.setupUI()
@@ -23,7 +22,11 @@ class DetailsViewController: BaseViewController {
         view.backgroundColor = .white
         viewModel.delegate = self
         dataLoadingView = coordinator?.showDataLoader()
-        viewModel.getCharacters(characters: characters)
+    }
+    
+    override func setupData() {
+        super.setupData()
+        viewModel.getCharacters()
     }
     
     override func addSubviews() {
@@ -41,7 +44,7 @@ class DetailsViewController: BaseViewController {
         tableView.separatorStyle = .none
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: TableCellIdentifiers.desc)
     }
 }
 
@@ -51,9 +54,9 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        cell.selectionStyle = .none
+        let cell = tableView.dequeueReusableCell(withIdentifier: TableCellIdentifiers.desc, for: indexPath)
         let item = viewModel.characters[indexPath.row]
+        cell.selectionStyle = .none
         cell.textLabel?.text = item.name
         return cell
     }

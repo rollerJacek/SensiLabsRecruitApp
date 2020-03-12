@@ -10,9 +10,9 @@ import Foundation
 
 enum ApiUrl {
     
-    static let prefix = "https://swapi.co/api/"
+    static let host = "https://swapi.co/api/"
     
-    static let films = prefix + "films/"
-    static let characters = prefix + "characters/"
+    static let films = host + "films/"
+    static let characters = host + "characters/"
 }
 

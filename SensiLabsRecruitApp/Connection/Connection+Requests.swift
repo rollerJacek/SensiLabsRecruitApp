@@ -10,22 +10,19 @@ import Foundation
 
 class ConnectionService {
     static func getAllFilms(completion: @escaping ([FilmsModel]) -> ()) {
-        guard let url: URL = URL(string: ApiUrl.films) else {return}
-        
+        guard let url: URL = URL(string: ApiUrl.films) else { return }
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data,
                 error == nil else {
-                    print(error?.localizedDescription ?? "Response Error")
+                    print(error?.localizedDescription ?? "Response Error in: ConnectionService.getAllFilms")
                     return
             }
             do{
-                guard let films = try? JSONDecoder().decode(FilmsResponse.self, from: data) else {
-                    print("Error: Couldn't decode data")
-                    return
-                }
+                let films = try JSONDecoder().decode(FilmsResponse.self, from: data)
                 completion(films.results)
+            } catch {
+                print("Error: Couldn't decode data in: ConnectionService.getAllFilms")
             }
-            
         }
         task.resume()
     }
@@ -36,28 +33,26 @@ class ConnectionService {
         
         for character in characterList {
             group.enter()
-            guard let url: URL = URL(string: character) else {return}
+            guard let url: URL = URL(string: character) else { return }
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-                defer{ group.leave() }
+                
+                defer { group.leave() }
                 guard let data = data,
                     error == nil else {
-                        print(error?.localizedDescription ?? "Response Error")
+                        print(error?.localizedDescription ?? "Response Error in: ConnectionService.getAllCharacters")
                         return
                 }
                 do{
-                    guard let newCharacter = try? JSONDecoder().decode(CharacterModel.self, from: data) else {
-                        print("Error: Couldn't decode data")
-                        return
-                    }
+                    let newCharacter = try JSONDecoder().decode(CharacterModel.self, from: data)
                     characters.append(newCharacter)
+                } catch {
+                    print("Error: Couldn't decode data in: ConnectionService.getAllCharacters")
                 }
-                
             }
             task.resume()
         }
         group.notify(queue: DispatchQueue.main){
             completion(characters)
         }
-
     }
 }

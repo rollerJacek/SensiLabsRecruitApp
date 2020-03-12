@@ -14,12 +14,14 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupData()
         setupUI()
         addSubviews()
         constraintViews()
         setupTableView()
     }
     
+    func setupData() {}
     func setupUI() {}
     func addSubviews() {}
     func constraintViews() {}

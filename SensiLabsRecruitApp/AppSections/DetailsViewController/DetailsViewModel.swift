@@ -15,10 +15,15 @@ protocol DetailsViewModelDelegate: class {
 class DetailsViewModel {
     
     var characters: [CharacterModel] = []
+    var characterStrings: [String] = []
     weak var delegate: DetailsViewModelDelegate?
     
-    func getCharacters(characters: [String]) {
-        ConnectionService.getAllCharacters(characterList: characters) { [weak self] result in
+    init(characters: [String]) {
+        self.characterStrings = characters
+    }
+    
+    func getCharacters() {
+        ConnectionService.getAllCharacters(characterList: self.characterStrings) { [weak self] result in
             self?.characters = result
             self?.delegate?.didFetchCharacters()
         }

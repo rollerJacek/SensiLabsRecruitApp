@@ -11,17 +11,20 @@ import UIKit
 class MainViewController: BaseViewController {
     
     lazy var tableView: UITableView = UITableView()
-    private lazy var viewModel = MainViewModel()
-    let cellId = "MainTableViewCell"
-    var dataLoadingView: DataLoaderViewController?
+    private var viewModel = MainViewModel()
+    private var dataLoadingView: DataLoaderViewController?
     
     override func setupUI() {
         super.setupUI()
         title = "Movies list"
         view.backgroundColor = .white
-        dataLoadingView = coordinator?.showDataLoader()        
-        viewModel.getFilms()
+        dataLoadingView = coordinator?.showDataLoader()
         viewModel.delegate = self
+    }
+    
+    override func setupData() {
+        super.setupData()
+        viewModel.getFilms()
     }
     
     override func addSubviews() {
@@ -40,7 +43,7 @@ class MainViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        tableView.register(MainTableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(MainTableViewCell.self, forCellReuseIdentifier: TableCellIdentifiers.main)
     }
 }
 
@@ -50,10 +53,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? MainTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableCellIdentifiers.main, for: indexPath) as? MainTableViewCell else { return UITableViewCell() }
         let item = viewModel.films[indexPath.row]
-        cell.titleLabel.text = item.title
-        cell.descriptionLabel.text = item.director
+        cell.setupCell(film: item)
         cell.contentView.layer.masksToBounds = true
         return cell
     }

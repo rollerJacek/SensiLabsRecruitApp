@@ -13,8 +13,8 @@ protocol MainViewModelDelegate: class {
 }
 
 class MainViewModel {
-    var films: [FilmsModel] = []
     
+    var films: [FilmsModel] = []
     weak var delegate: MainViewModelDelegate?
     
     func getFilms() {
