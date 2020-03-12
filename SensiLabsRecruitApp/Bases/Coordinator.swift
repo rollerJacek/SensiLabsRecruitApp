@@ -20,8 +20,7 @@ extension Coordinator {
         navigationController.popViewController(animated: animated)
     }
     
-    func setAsTopVC() {
+    func removeFirstVC() {
         navigationController.viewControllers.remove(at: 0)
     }
-    
 }

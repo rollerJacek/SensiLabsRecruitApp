@@ -17,9 +17,17 @@ class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let vc = SplashViewController()
+        let vc = MainViewController()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func showDataLoader() -> DataLoaderViewController {
+        let vc = DataLoaderViewController()
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        navigationController.present(vc, animated: true)
+        return vc
     }
     
     func goToMainVC() {
@@ -28,9 +36,10 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func goToDetails() {
-        let vc = SplashViewController()
+    func goToDetails(characterList: [String]) {
+        let vc = DetailsViewController()
         vc.coordinator = self
+        vc.characters = characterList
         navigationController.pushViewController(vc, animated: true)
     }
 }
