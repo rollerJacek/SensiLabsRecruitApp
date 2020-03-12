@@ -14,14 +14,14 @@ protocol DetailsViewModelDelegate: class {
 
 class DetailsViewModel {
     
-    private var characters: [CharacterModel] = []
+    private var characterStrings: [String]
     
     init(characters: [String]) {
         self.characterStrings = characters
     }
     
     weak var delegate: DetailsViewModelDelegate?
-    private var characterStrings: [String]
+        private var characters: [CharacterModel] = []
     
     func getCharacters() {
         ConnectionService.getAllCharacters(characterList: self.characterStrings) { [weak self] result in
