@@ -32,17 +32,20 @@ class ConnectionService {
         var characters:[CharacterModel] = []
         
         for character in characterList {
+            guard let url: URL = URL(string: character) else {
+                return
+            }
+            
             group.enter()
-            guard let url: URL = URL(string: character) else { return }
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-                
                 defer { group.leave() }
-                guard let data = data,
-                    error == nil else {
-                        print(error?.localizedDescription ?? "Response Error in: ConnectionService.getAllCharacters")
-                        return
+                
+                guard let data = data, error == nil else {
+                    print(error?.localizedDescription ?? "Response Error in: ConnectionService.getAllCharacters")
+                    return
                 }
-                do{
+                
+                do {
                     let newCharacter = try JSONDecoder().decode(CharacterModel.self, from: data)
                     characters.append(newCharacter)
                 } catch {
@@ -51,6 +54,7 @@ class ConnectionService {
             }
             task.resume()
         }
+        
         group.notify(queue: DispatchQueue.main){
             completion(characters)
         }
