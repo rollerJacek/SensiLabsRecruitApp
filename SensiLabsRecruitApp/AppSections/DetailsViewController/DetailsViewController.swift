@@ -14,7 +14,7 @@ class DetailsViewController: BaseViewController {
     private lazy var viewModel = DetailsViewModel(characters: characters)
     private var dataLoadingView: DataLoaderViewController?
     lazy var tableView = UITableView()
-    lazy var characters: [String] = []
+    var characters: [String] = []
     
     override func setupUI() {
         super.setupUI()
@@ -50,12 +50,12 @@ class DetailsViewController: BaseViewController {
 
 extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.characters.count
+        return viewModel.charactersCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TableCellIdentifiers.desc, for: indexPath)
-        let item = viewModel.characters[indexPath.row]
+        let item = viewModel.itemForCharacter(index: indexPath.row)
         cell.selectionStyle = .none
         cell.textLabel?.text = item.name
         return cell
